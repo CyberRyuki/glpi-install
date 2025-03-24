@@ -76,13 +76,13 @@ nano /etc/apache2/sites-enabled/000-default.conf
 ------------------------------------------------------------
 <VirtualHost *:80>
 
-        ServerBane glpi.localhost
+        ServerBane glpi.localhost (your host name)
         DocumentRoot /var/www/glpi/public
         <Directory /var/www/glpi/public>
                 Require all granted
                 RewriteEngine On
                 RewriteCond %{REQUEST_FILENAME} !-f
-                RewriteRule ^(.*)$ index.php [QSA.L]
+                RewriteRule ^(.*)$ index.php [QSA,L]
         </Directory>
 
 </VirtualHost>
