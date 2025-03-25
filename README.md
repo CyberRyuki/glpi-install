@@ -76,7 +76,7 @@ nano /etc/apache2/sites-enabled/000-default.conf
 ------------------------------------------------------------
 <VirtualHost *:80>
 
-        ServerBane glpi.localhost (your host name)
+        ServerName glpi.localhost (your host name)
         DocumentRoot /var/www/glpi/public
         <Directory /var/www/glpi/public>
                 Require all granted
