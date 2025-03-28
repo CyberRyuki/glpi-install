@@ -42,7 +42,7 @@ apt install php-mysql -y
 ------------------Create Database for GLPI----------------------
 mysql -u root -p
 MariaDB> create database glpi charset utf8mb4 collate utf8mb4_unicode_ci;
-MariaDB> create user glpi_user@localhost identified by 'TIC$..2k24*';
+MariaDB> create user (user)@localhost identified by '(password)*';
 MariaDB> grant all privileges on glpi.* to glpi_user@localhost;
 MariaDB> grant select on mysql.time_zone_name to glpi_user@localhost;
 
